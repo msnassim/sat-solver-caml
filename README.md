@@ -13,7 +13,7 @@ Un solveur de SAT prend souvent en argument une/des formule(s) en forme normale 
 
 ## Comment faire marcher l'algorithme ? 
 - Lancer utop
-- Charger le fichier sat .ml en faisant ```ocaml #use sat.ml;;````
+- Charger le fichier sat .ml en faisant ```ocaml #use sat.ml;;```
 - Pour le système suivant par exemple :   
   
   ``` Pour le système :
@@ -21,7 +21,10 @@ Un solveur de SAT prend souvent en argument une/des formule(s) en forme normale 
   | V1 XOR V3 = V2
   | NOT (V1 AND (V2 AND V3 )) = TRUE
   ````
-- Il faut mettre ```ocaml solveur [(OR(V(1),V(2)),TRUE); (XOR(V(1),V(3)),V(2));(NOT(AND(AND(V(1),V(2)),V(3))),TRUE)];; ````
+- Il faut mettre :
+  ```ocaml 
+    solveur [(OR(V(1),V(2)),TRUE);(XOR(V(1),V(3)),V(2));(NOT(AND(AND(V(1),V(2)),V(3))),TRUE)] ;;
+  ````
 - le résultat devrait être le suivant :
   
   ```ocaml - : (eb * bool) list list =
