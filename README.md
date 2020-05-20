@@ -1,7 +1,7 @@
 # Sat-solver-caml 
 Un solveur de sat écrit en Ocaml ! 
 
-## Qu'est ce qu'un problème SAT ? 
+## Qu'est-ce qu'un problème SAT ? 
 
 Le problème de satisfiabilité booléenne est un problème de décision classique en informatique, qui,
 étant donné une formule de logique propositionnelle détermine s’il existe une instance des variables
