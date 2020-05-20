@@ -13,7 +13,9 @@ Un solveur de SAT prend souvent en argument une/des formule(s) en forme normale 
 
 ## Comment faire marcher l'algorithme ? 
 - Lancer utop
-- Charger le fichier sat .ml en faisant ```ocaml #use sat.ml;;```
+- Charger le fichier sat .ml en faisant ```ocaml 
+#use sat.ml;;
+```
 - Pour le système suivant par exemple :   
   
   ``` Pour le système :
