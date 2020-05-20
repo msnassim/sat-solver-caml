@@ -12,10 +12,8 @@ Un solveur de SAT prend souvent en argument une/des formule(s) en forme normale 
 (CNF).
 
 ## Comment faire marcher l'algorithme ? 
-- Lancer utop
-- Charger le fichier sat .ml en faisant ```ocaml 
-#use sat.ml;;
-```
+- Lancer utop.
+- Charger le fichier sat .ml en faisant ``` #use sat.ml;;```
 - Pour le système suivant par exemple :   
   
   ``` Pour le système :
@@ -25,7 +23,7 @@ Un solveur de SAT prend souvent en argument une/des formule(s) en forme normale 
   ````
 - Il faut mettre :
   ```ocaml 
-    solveur [(OR(V(1),V(2)),TRUE);(XOR(V(1),V(3)),V(2));(NOT(AND(AND(V(1),V(2)),V(3))),TRUE)] ;;
+  # solveur [(OR(V(1),V(2)),TRUE);(XOR(V(1),V(3)),V(2));(NOT(AND(AND(V(1),V(2)),V(3))),TRUE)] ;;
   ````
 - le résultat devrait être le suivant :
   
