@@ -12,11 +12,6 @@ let rec append liste1 liste2 =
     |[],[] -> []
     |x1::ll1, x2::ll2 -> insertion (append ll1 liste2) x1;;
 
-(*let rec list2tuple l = 
-	match l with
-	|x::ll -> *)
-
-
 let l1 = [];;
 
 let rec recherche_var dist equ =
